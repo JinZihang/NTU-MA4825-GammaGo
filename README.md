@@ -16,18 +16,6 @@ Contents within this repository are under MIT license, feel free to use it for y
 
 The purpose of creating this repository is to provide an easy way for everyone to start a robotics project. So you can suffer less pain on setting up the environment, figuring out how to even make a motor move. Instead, you can spend more time making your own ideas come true. It will be great if you can help add new features here. We will add you to our contributor list.
 
-# Contributors
-
-<a href="https://github.com/JinZihang/GammaGo/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=JinZihang/GammaGo" />
-</a>
-
-**Mechanical Team:** Yuwen, Yuxin
-
-**Software Team:** Bryant, Zihang
-
-**Control Team:** Jianing, Vamsi
-
 ### Special Thanks
 - This project makes use of the [ros_sony_cam](https://github.com/arcoslab/ros_sony_cam) created by arcoslab.
 
@@ -41,3 +29,28 @@ The purpose of creating this repository is to provide an easy way for everyone t
 # Steps for Setting Up the Project
 
 # Future Improvement Ideas
+
+# Contributors
+
+**Mechanical Team:** Yuwen, Yuxin
+
+**Software Team:** Bryant, Zihang
+
+**Control Team:** Jianing, Vamsi
+
+<a href="https://github.com/JinZihang/GammaGo/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=JinZihang/GammaGo" />
+</a>
+
+Made with [contributors-img](https://contrib.rocks).
+
+[contributors-shield]: https://img.shields.io/github/contributors/JinZihang/GammaGo?style=for-the-badge
+[contributors-url]: https://github.com/JinZihang/GammaGo/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/JinZihang/GammaGo?style=for-the-badge
+[forks-url]: https://github.com/JinZihang/GammaGo/network/members
+[stars-shield]: https://img.shields.io/github/stars/JinZihang/GammaGo?style=for-the-badge
+[stars-url]: https://github.com/JinZihang/GammaGo/stargazers
+[issues-shield]: https://img.shields.io/github/issues/JinZihang/GammaGo?style=for-the-badge
+[issues-url]: https://github.com/JinZihang/GammaGo/issues
+[license-shield]: https://img.shields.io/github/license/JinZihang/GammaGo?style=for-the-badge
+[license-url]: https://github.com/JinZihang/GammaGo/blob/main/LICENSE
