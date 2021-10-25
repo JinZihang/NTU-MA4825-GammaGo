@@ -4,7 +4,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-# GammaGo
+# Introduction
 GammaGo is an interactive go game system that integrates image recognition with robot arm control.
 
 This repository contains all the necessary materials to reproduce our GammaGo system:
@@ -16,17 +16,14 @@ Contents within this repository are under MIT license, feel free to use it for y
 
 The purpose of creating this repository is to provide an easy way for everyone to start a robotics project. So you can suffer less pain on setting up the environment, figuring out how to even make a motor move. Instead, you can spend more time making your own ideas come true. It will be great if you can help add new features here. We will add you to our contributor list.
 
-### Special Thanks
-- This project makes use of the [ros_sony_cam](https://github.com/arcoslab/ros_sony_cam) created by arcoslab.
-
-# Steps for Making Changes to this Repository
+# Instructions for Making Changes to this Repository
 1. Fork this repository.
 2. Make edits on your forked repository.
 3. Create a pull request.
 
-# Overview of Each Part
+# Overview
 
-# Steps for Setting Up the Project
+# Steps to Set Up the Project
 
 # Future Improvement Ideas
 
@@ -38,11 +35,7 @@ The purpose of creating this repository is to provide an easy way for everyone t
 
 **Control Team:** Jianing, Vamsi
 
-<a href="https://github.com/JinZihang/GammaGo/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=JinZihang/GammaGo" />
-</a>
-
-Made with [contributors-img](https://contrib.rocks).
+**Special Thanks:** [ros_sony_cam](https://github.com/arcoslab/ros_sony_cam) by arcoslab.
 
 [contributors-shield]: https://img.shields.io/github/contributors/JinZihang/GammaGo?style=for-the-badge
 [contributors-url]: https://github.com/JinZihang/GammaGo/graphs/contributors
