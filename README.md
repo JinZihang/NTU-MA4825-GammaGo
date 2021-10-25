@@ -1,42 +1,43 @@
 [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
+[![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
 # GammaGo
 GammaGo is an interactive go game system that integrates image recognition with robot arm control.
 
-# Hardware
-STL files for 3D printing are located in the hardware folder. 
+This repository contains all the necessary materials to reproduce our GammaGo system:
+- Hardware design and materials we used. (Model files for 3D printing, etc.)
+- Image sensing code to find stone positions on the go board. (Both pure python and ROS python version provided.)
+- Control code for the robot arm (Using ROS).
 
-For Prototype 3
-* Sony Camera RX100 VI
+Contents within this repository are under MIT license, feel free to use it for your own project. 
 
-# Driver
-This project uses the open source ros sony cam driver created by arcoslab:\
-https://github.com/arcoslab/ros_sony_cam
+The purpose of creating this repository is to provide an easy way for everyone to start a robotics project. So you can suffer less pain on setting up the environment, figuring out how to even make a motor move. Instead, you can spend more time making your own ideas come true. It will be great if you can help add new features here. We will add you to our contributor list.
 
-# Contributors ✨
-
-Thanks goes to these wonderful people 🥇
+# Contributors
 
 <a href="https://github.com/JinZihang/GammaGo/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=JinZihang/GammaGo" />
 </a>
 
+**Mechanical Team:** Yuwen, Yuxin
 
-Made with [contributors-img](https://contrib.rocks).
+**Software Team:** Bryant, Zihang
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+**Control Team:** Jianing, Vamsi
 
-[contributors-shield]: https://img.shields.io/github/contributors/JinZihang/GammaGo?style=for-the-badge
-[contributors-url]: https://github.com/JinZihang/GammaGo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/JinZihang/GammaGo?style=for-the-badge
-[forks-url]: https://github.com/JinZihang/GammaGo/network/members
-[stars-shield]: https://img.shields.io/github/stars/JinZihang/GammaGo?style=for-the-badge
-[stars-url]: https://github.com/JinZihang/GammaGo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/JinZihang/GammaGo?style=for-the-badge
-[issues-url]: https://github.com/JinZihang/GammaGo/issues
-[license-shield]: https://img.shields.io/github/license/JinZihang/GammaGo?style=for-the-badge
-[license-url]: https://github.com/JinZihang/GammaGo/blob/main/LICENSE
+### Special Thanks
+- This project makes use of the [ros_sony_cam](https://github.com/arcoslab/ros_sony_cam) created by arcoslab.
+
+# Steps for Making Changes to this Repository
+1. Fork this repository.
+2. Make edits on your forked repository.
+3. Create a pull request.
+
+# Overview of Each Part
+
+# Steps for Setting Up the Project
+
+# Future Improvement Ideas
