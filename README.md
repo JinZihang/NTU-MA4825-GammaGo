@@ -14,7 +14,7 @@ For Prototype 3
 * Sony Camera RX100 VI
 
 # Driver
-This project uses the open source ros sony cam driver created by arcoslab:
+This project uses the open source ros sony cam driver created by arcoslab:\
 https://github.com/arcoslab/ros_sony_cam
 
 # Contributors ✨
