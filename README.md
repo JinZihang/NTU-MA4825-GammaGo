@@ -23,9 +23,21 @@ The purpose of creating this repository is to provide an easy way for everyone t
 
 # Overview
 
-# Steps to Set Up the Project
+### Highlights
+### Issues
+### Future Development
+- Mechanical
+- Software
+  - Improve contour and corner detection to make image recognition work stably on reflective board surfaces.
+- Control
+  - Correct stones that offset too much.
+  - Clean the board after finishing a game.
+  - Replay past games.
+- Others
+  - Display visible signs when a game ends.
 
-# Future Improvement Ideas
+# Steps to Set Up the Project
+1. Clone this repository using `git clone https://github.com/JinZihang/GammaGo.git`.
 
 # Contributors
 
