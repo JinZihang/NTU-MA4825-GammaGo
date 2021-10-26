@@ -16,10 +16,12 @@ Contents within this repository are under MIT license, feel free to use it for y
 
 The purpose of creating this repository is to provide an easy way for everyone to start a robotics project. So you can suffer less pain on setting up the environment, figuring out how to even make a motor move. Instead, you can spend more time making your own ideas come true. It will be great if you can help add new features here. We will add you to our contributor list.
 
-# Instructions for Making Changes to this Repository
-1. Fork this repository.
-2. Make edits on your forked repository.
-3. Create a pull request.
+# Contribution Guidelines
+1.  **Fork** the repo on GitHub
+2.  **Clone** the project to your local system
+3.  **Commit** changes to your own separate branch
+4.  **Push** your work back up to your fork
+5.  Submit a **Pull request** so that we can review your changes
 
 # Overview
 
@@ -41,11 +43,9 @@ The purpose of creating this repository is to provide an easy way for everyone t
 
 # Contributors
 
-**Mechanical Team:** Yuwen, Yuxin
-
-**Software Team:** Bryant, Zihang
-
-**Control Team:** Jianing, Vamsi
+<a href="https://github.com/JinZihang/GammaGo/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=JinZihang/GammaGo" />
+</a>
 
 **Special Thanks:** [ros_sony_cam](https://github.com/arcoslab/ros_sony_cam) by arcoslab.
 
