@@ -17,29 +17,28 @@ Contents within this repository are under MIT license, feel free to use it for y
 The purpose of creating this repository is to provide an easy way for everyone to start a robotics project. So you can suffer less pain on setting up the environment, figuring out how to even make a motor move. Instead, you can spend more time making your own ideas come true. It will be great if you can help add new features here. We will add you to our contributor list.
 
 # Contribution Guidelines
-1.  **Fork** the repo on GitHub
-2.  **Clone** the project to your local system
-3.  **Commit** changes to your own separate branch
-4.  **Push** your work back up to your fork
-5.  Submit a **Pull request** so that we can review your changes
+1.  **Fork** this repo
+2.  **Clone** the forked repo to your local system
+3.  **Commit** changes locally
+4.  **Push** your commits to the forked repo
+5.  Submit a **Pull Request** and **Request Review** from us
 
 # Overview
 
 ### Highlights
 ### Issues
 ### Future Development
-- Mechanical
-- Software
+- **Mechanical**
+- **Software**
   - Improve contour and corner detection to make image recognition work stably on reflective board surfaces.
-- Control
+- **Control**
   - Correct stones that offset too much.
   - Clean the board after finishing a game.
   - Replay past games.
-- Others
+- **Others**
   - Display visible signs when a game ends.
 
 # Steps to Set Up the Project
-1. Clone this repository using `git clone https://github.com/JinZihang/GammaGo.git`.
 
 # Contributors
 
@@ -47,7 +46,7 @@ The purpose of creating this repository is to provide an easy way for everyone t
   <img src="https://contrib.rocks/image?repo=JinZihang/GammaGo" />
 </a>
 
-**Special Thanks:** [ros_sony_cam](https://github.com/arcoslab/ros_sony_cam) by arcoslab.
+Special thanks to [ros_sony_cam](https://github.com/arcoslab/ros_sony_cam) and [all-contributors](https://github.com/all-contributors/all-contributors).
 
 [contributors-shield]: https://img.shields.io/github/contributors/JinZihang/GammaGo?style=for-the-badge
 [contributors-url]: https://github.com/JinZihang/GammaGo/graphs/contributors
