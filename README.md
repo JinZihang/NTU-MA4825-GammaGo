@@ -29,6 +29,9 @@ The purpose of creating this repository is to provide an easy way for everyone t
 ### Issues
 ### Future Development
 - **Mechanical**
+  - Use stronger motors and 3D printing materials
+  - The stones feeder could be improved and ensure only one piece drop a time and place horizontally. 
+
 - **Software**
   - Improve contour and corner detection to make image recognition work stably on reflective board surfaces.
 - **Control**
