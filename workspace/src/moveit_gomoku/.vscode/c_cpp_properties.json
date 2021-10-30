@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/vamsi/ws_moveit/devel/include/**",
+        "/opt/ros/kinetic/include/**",
+        "/home/vamsi/ws_moveit/src/DynamixelSDK/ros/dynamixel_sdk/include/**",
+        "/home/vamsi/ws_moveit/src/dynamixel-workbench/dynamixel_workbench_controllers/include/**",
+        "/home/vamsi/ws_moveit/src/dynamixel-workbench/dynamixel_workbench_operators/include/**",
+        "/home/vamsi/ws_moveit/src/dynamixel-workbench/dynamixel_workbench_toolbox/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}
