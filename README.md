@@ -28,12 +28,12 @@ The purpose of creating this repository is to provide an easy way for everyone t
 ### Highlights
 
 ### Issues
-- When motors overheat, their strength are not enough
-- Image recognition does not work well consistently for a very reflective board surface
+- When motors overheat, their strength turn smaller and might become inadequate
+- Image recognition does not work well consistently for reflective board surfaces
 
 ### Future Development
 - **Mechanical**
-  - Use gear set to reduce the torque required from motors
+  - Use gear sets to reduce the torque required from motors
   - Use stronger motors and 3D-printing materials
   - Improve the stone feeder
 - **Software**
