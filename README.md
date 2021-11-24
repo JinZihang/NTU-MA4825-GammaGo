@@ -5,7 +5,7 @@
 [![MIT License][license-shield]][license-url]
 
 # Introduction
-GammaGo is an interactive go game system that integrates image recognition with robot arm control.
+GammaGo is an interactive go game system that integrates image recognition with robot arm control. Game rule depends on the AI algorithm used, which is currently Gomoku.
 
 This repository contains all the necessary materials to reproduce our GammaGo system:
 - Hardware design and materials we used. (Model files for 3D printing, etc.)
@@ -26,20 +26,23 @@ The purpose of creating this repository is to provide an easy way for everyone t
 # Overview
 
 ### Highlights
+
 ### Issues
+- When motors overheat, their strength are not enough
+- Image recognition does not work well consistently for a very reflective board surface
+
 ### Future Development
 - **Mechanical**
-  - Use stronger motors and 3D printing materials
-  - The stones feeder could be improved and ensure only one piece drop a time and place horizontally. 
-
+  - Use gear set to reduce the torque required from motors
+  - Use stronger motors and 3D-printing materials
+  - Improve the stone feeder
 - **Software**
-  - Improve contour and corner detection to make image recognition work stably on reflective board surfaces.
+  - Improve image recognition for reflective board sufaces
 - **Control**
-  - Correct stones that offset too much.
-  - Clean the board after finishing a game.
-  - Replay past games.
+  - Clean the board after a game completes
+  - Replay past games
 - **Others**
-  - Display visible signs when a game ends.
+  - Display visible signs when a game ends
 
 # Steps to Set Up the Project
 
