@@ -1,0 +1,7 @@
+controller_list:
+  - name: fake_gomoku_arm_controller
+    joints:
+      - join_1
+      - joint_2
+      - joint_3
+      - gripper_joint

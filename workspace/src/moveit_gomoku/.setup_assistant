@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: urdf_assem_file
+    relative_path: urdf/urdf_assem_file.urdf
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/urdf_assem_file.srdf
+  CONFIG:
+    author_name: vamsi
+    author_email: vamsi002@e.ntu.edu.sg
+    generated_timestamp: 1632760507
