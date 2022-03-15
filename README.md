@@ -4,7 +4,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-# Introduction
+# Introduction to GammaGo
 GammaGo is an interactive go game system that integrates image recognition with robot arm control. Game rule depends on the AI algorithm used, which is currently Gomoku.
 
 This repository contains all the necessary materials to reproduce our GammaGo system:
