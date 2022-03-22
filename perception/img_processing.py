@@ -6,7 +6,6 @@ import scipy.cluster as cluster
 from collections import defaultdict
 from statistics import mean
 
-
 def imgProcessing(frame, previous_cnrs, previous_intxns, history_bk):
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     ret, thresh = cv2.threshold(gray, 150, 255, cv2.THRESH_BINARY_INV)
@@ -66,17 +65,14 @@ def imgProcessing(frame, previous_cnrs, previous_intxns, history_bk):
             return cropped, previous_cnrs, previous_intxns, bks
     return frame, previous_cnrs, previous_intxns, history_bk
 
-
 def findContours(thresh):
     contours, hierarchy = cv2.findContours(
         thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
     return sorted(contours, key=cv2.contourArea, reverse=True)[0]
 
-
 def findApproxcnrs(cnt):
     epsilon = 0.02 * cv2.arcLength(cnt, True)
     return cv2.approxPolyDP(cnt, epsilon, True)
-
 
 def applyAreaConstraints(thresh):
     cnt_board_move = cv2.findContours(
@@ -89,10 +85,8 @@ def applyAreaConstraints(thresh):
             return True
     return False
 
-
 def dist(pt_1, pt_2):
     return math.sqrt((pt_1[0] - pt_2[0])**2 + (pt_1[1] - pt_2[1])**2)
-
 
 def getBoardCorners(cnrs):
     # Corners: A -> B -> C -> D
@@ -111,11 +105,9 @@ def getBoardCorners(cnrs):
     board_cnrs = np.float32([(0, h - 1), (0, 0), (w - 1, 0), (w - 1, h - 1)])
     return board_cnrs, h, w
 
-
 def unwarpPerspective(img, src, dst, w, h):
     H, _ = cv2.findHomography(src, dst, cv2.RANSAC, 5.0)
     return cv2.warpPerspective(img, H, (w, h), flags=cv2.INTER_LINEAR)
-
 
 def getCannyEdges(img, sigma=0.33):
     v = np.median(img)
@@ -123,7 +115,6 @@ def getCannyEdges(img, sigma=0.33):
     upper = int(min(255, (1.0 + sigma) * v))
     edges = cv2.Canny(img, lower, upper)
     return edges
-
 
 def seperateHorVerLines(lines):
     h_lines, v_lines = [], []
@@ -134,7 +125,6 @@ def seperateHorVerLines(lines):
         else:
             h_lines.append([rho, theta])
     return h_lines, v_lines
-
 
 def findIntersections(h_lines, v_lines):
     pts = []
@@ -147,7 +137,6 @@ def findIntersections(h_lines, v_lines):
             pts.append(inter_pt)
     return np.array(pts)
 
-
 def clusterPoints(pts):  # Hierarchical cluster (by euclidean distance) intersection points
     dists = spatial.distance.pdist(pts)
     single_linkage = cluster.hierarchy.single(dists)
@@ -159,7 +148,6 @@ def clusterPoints(pts):  # Hierarchical cluster (by euclidean distance) intersec
     clusters = map(lambda arr: (np.mean(np.array(arr)[:, 0]), np.mean(
         np.array(arr)[:, 1])), cluster_values)
     return sorted(list(clusters), key=lambda k: [k[1], k[0]])
-
 
 def augmentPoints(pts):
     pts_shape = list(np.shape(pts))
@@ -181,7 +169,6 @@ def augmentPoints(pts):
     augmented_pts = sorted(augmented_pts, key=lambda k: [k[1], k[0]])
     return augmented_pts
 
-
 def drawLine(img, line, color):
     rho, theta = line
     if not np.isnan(rho) and not np.isnan(theta):
@@ -194,7 +181,6 @@ def drawLine(img, line, color):
         x2 = int(x0 - 1000*(-b))
         y2 = int(y0 - 1000*(a))
         cv2.line(img, (x1, y1), (x2, y2), color, 2)
-
 
 def hasBlackStone(img, x, y):
     anlys_area = img[x-5:x+5, y-5:y+5]
@@ -209,7 +195,6 @@ def hasBlackStone(img, x, y):
         return True
     else:
         return False
-
 
 def areaConstraintsCalibration(frame):
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -226,7 +211,6 @@ def areaConstraintsCalibration(frame):
 
         if len(approx) == 4:
             print("Current area is " + str(area) + ".")
-
 
 def colorConstraintsCalibration(cropped, previous_intxns):
     for idx, intxn in enumerate(previous_intxns):
@@ -245,7 +229,6 @@ def colorConstraintsCalibration(cropped, previous_intxns):
 
     np.save('black_stone_color_constraint.npy',
             np.asarray([(max(bk_ave_clrs) + min(mt_ave_clrs))/2]))
-
 
 def noiseFiltering(history_bk, new_bks, temp_bk, fr_cnt):
     new_bk_idx = list(set(new_bks) - set(history_bk))

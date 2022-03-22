@@ -46,7 +46,10 @@ The purpose of creating this repository is to provide an easy way for everyone t
 - **Others**
   - Display visible signs when a game ends
 
-# Steps to Set Up the Project
+# External Requirements
+1. Dynamixel
+2. MoveIt
+2. Game algorithm (how the system plays)
 
 # Contributors
 
